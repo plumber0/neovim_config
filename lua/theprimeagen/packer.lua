@@ -50,7 +50,6 @@ return require('packer').startup(function(use)
   }
 
   use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
   use {'hkupty/iron.nvim'}
   -- install without yarn or npm
 use({
