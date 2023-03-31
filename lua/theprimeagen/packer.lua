@@ -28,6 +28,16 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
 
   use {
+  'folke/trouble.nvim',
+  requires = 'kyazdani42/nvim-web-devicons',
+  config = function()
+    require('trouble').setup {
+      -- Your configuration options go here
+    }
+  end
+}
+
+  use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
 		  -- LSP Support
